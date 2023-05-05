@@ -1,0 +1,40 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins',sans-serif;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding: 20px 100px;
+background:rgb(39, 37, 37);
+display: flex;
+justify-content: space-between;
+align-items: left;
+z-index: 99;
+}
+body{
+    background-color: rgb(57, 54, 54);
+}
+a{
+    text-decoration:none ;
+    padding: 30px;
+    font-size: 21px;
+    color: aliceblue;
+}
+.bot{
+    color: yellow;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }

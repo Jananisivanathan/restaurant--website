@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+         body {
+    font-family: "Montserrat", sans-serif;
+	background-image: url("Background.jpg");
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height: 90px;
+padding: 20px 100px;
+background:rgb(39, 37, 37);
+display: flex;
+justify-content: space-between;
+align-items: left;
+z-index: 99;
+}
+
+
+.brand a {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+    padding: 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 0.5px;
+}
+
+li > 
+    a{
+    text-decoration:none ;
+    padding: 30px;
+    font-size: 21px;
+    color: aliceblue;
+}
+
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}
+h2{
+    color:orange;
+    margin: 55px;
+    font-size: 30px;
+
+}
+.bot{
+    color:yellow;
+}
+input{
+    border-radius:5px; 
+    padding:5px;
+    min-height:4px; 
+    width: 250px;
+    outline-color:blue;
+}
+
+  a.bb{
+    background-color:darkgoldenrod;
+    color: black;
+    padding:8px;
+    border-radius:5px; 
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    min-height:4px; 
+  }
+    </style>
+</head>
+<body>
+<img-src>
+    <header>
+        <div class="brand"><img src="photo.jpg" width="65px "  height="65px"></div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <li><a class ="bot" href="welcome.html">
+                    Sign in /Register
+                    </a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+    <br>
+    <div >
+        <h2>Admin Login</h2>
+		
+        <center>
+        <img src="user-image-with-black-background.png" height="350px" width="350px" >
+        </center>
+       
+      </div>
+<br>
+      <center>
+        <form action="#" >
+            
+          
+            <div class="container">
+              
+              <input type="text" placeholder="Email" name="uname" >
+          
+              <br>
+              <br>
+              <input type="password" placeholder="password" name="psw" required>
+          <br>
+          <br>
+              
+              <a href="home.html" class="bb">Login</a>
+            
+              
+            
+          
+            
+          </form>
+        </center>
+      
+</body>
+</html>

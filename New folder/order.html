@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+         body {
+    font-family: "Montserrat", sans-serif;
+	background-image: url("Background.jpg");
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height: 90px;
+padding: 20px 100px;
+background:rgb(39, 37, 37);
+display: flex;
+justify-content: space-between;
+align-items: left;
+z-index: 99;
+}
+
+
+.brand a {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff;
+    padding: 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 0.5px;
+}
+
+li > 
+    a{
+    text-decoration:none ;
+    padding: 30px;
+    font-size: 21px;
+    color: aliceblue;
+}
+
+}
+
+
+li::after {
+    content: '';
+    width: 0rem;
+    height: 0.15rem;
+    background-color: #fff;
+    display: block;
+    border-radius: 0.2rem;
+    margin: 0.2rem auto 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 2rem;
+}
+h2{
+    color:orange;
+    margin: 55px;
+    font-size: 30px;
+
+}
+.bot{
+    color:yellow;
+}
+input{
+    border-radius:5px; 
+    padding:5px;
+    min-height:4px; 
+    width: 250px;
+    outline-color:blue;
+}
+button {
+    
+    
+    background-color:darkgoldenrod;
+    color: black;
+    
+    border-radius:5px; 
+    padding:5px;
+    min-height:4px; 
+   
+    
+  }
+  .cc{
+    width: 510px;
+    height: 410px;
+    border: 2px solid orange;
+    color: orange;
+    padding:  50px;
+    line-height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .d{
+    color: orange;
+  }
+  img{
+    border: orange solid 5px;
+  }
+ .value-button{
+    align:right;
+    margin-right: 20px;
+
+ }
+
+
+  
+    </style>
+</head>
+<body>
+<img-src>
+    <header>
+        <div class="brand"><img src="photo.jpg" width="65px "  height="65px"></div>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <li><a class ="bot" href="welcome.html">
+                    Sign in /Register
+                    </a></li>
+            </ul>
+        </nav>
+    </header><br><br>
+    <br>
+    <div >
+        <h2>Order Now</h2>
+		
+        <center>
+        <img src="Biriyani.jpeg" height="250px" width="350px" ><br>
+        <div class="d">
+        Briyani<br>
+        Rs.1000
+        </div>
+        </center>
+       
+      </div>
+<br>
+<h2>Ingredients</h2> 
+<div class="cc">
+  
+    <form>
+        <div class="value-button" id="decrease" onclick="decreaseValue(" value="Decrease Value">-</div>
+        <input type="number" id="number" value="0" /> <div class="value-button" id=" increase"
+        onclick=" increaseValue )" value="Increase Value">+ </div> </form>
+<h3>Coconut Milk</h3>
+
+<h3>Rice</h3>
+<h3>chiken</h3>
+</div>
+
+
+<center>
+    <form action="#" >
+        
+      
+        <br>
+      
+          <button type="submit" class="submit">Add To chart</button>
+          
+        
+      
+        
+      </form>
+    </center>
+
+                  
+</body>
+</html>
